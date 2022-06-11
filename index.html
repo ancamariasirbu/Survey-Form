@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Luna Maar Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this survey</p>
+    <form id="survey-form"> 
+      <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+
+      <label id="email-label">Email: <input id="email" type="email" placeholder="Enter yout email" required></label>
+
+      <label id="number-label">Age: <input id="number" type="number" min="13" max="120" placeholder="Enter yout age(years)" required></label>
+      <p id="role">Which option best describes your current role?</p>
+        <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Other</option>
+          </select>
+      </label>
+      
+      <p>Would you recomend Luna Maar to a friend?</p>
+      <label>
+        <input type="radio" name="recomend-type" value="Yes" class="inline">Yes</label>
+      <label><input type="radio" name="recomend-type" value="No" class="inline">No</label>
+      <label><input type="radio" name="recomend-type" value="Maybe" class="inline">Maybe</label>
+      
+      <p>Which one is your favourite Luna Maar song?</p>
+      <label><input type="checkbox" name="songs" value="1">Water song</label>
+      <label><input type="checkbox" name="songs" value="2">Illusive</label>
+      <label><input type="checkbox" name="songs" value="3">Sorry</label>
+      <label><input type="checkbox" name="songs" value="4">When in doubt</label>
+      <label><input type="checkbox" name="songs" value="5">No means no</label>
+      <label><input type="checkbox" name="songs" value="6">Waveless Water</label>
+      <label><input type="checkbox" name="songs" value="7">Willow</label>
+      <label><input type="checkbox" name="songs" value="8">Smoke and Mirrors</label>
+      <label><input type="checkbox" name="songs" value="9">If</label>
+      <label><input type="checkbox" name="songs" value="10">Landslide</label>
+      <p>Any commnets or suggestions?</p>
+      <label>
+        <textarea name="comments" rows="3" cols"30" placeholder="Comment here..."></textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html> 
